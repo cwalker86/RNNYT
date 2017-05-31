@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react';
 import { StyleSheet, Text } from 'react-native';
-import AppText from './ AppText';
-import * as globalStyles from '../ styles/ global';
+import AppText from './AppText';
+import * as globalStyles from '../styles/global';
 
-const Title = ({ style, children }) = > (
-   <AppText style ={[ styles.title, style]}>
+const Title=({ style, children }) => (
+   <AppText style ={[ style.title, style]}>
       {children}
     </AppText >
 );
@@ -21,7 +21,7 @@ const styles = StyleSheet.create(
       fontFamily: 'HelveticaNeue-CondensedBold',
       fontSize: 18,
       color: globalStyles.HEADER_TEXT_COLOR,
-      backgroundColor: `${ globalStyles.BG_COLOR} 99`
+      backgroundColor: `${ globalStyles.BG_COLOR}99`
     }
   }
 );

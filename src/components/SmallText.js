@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 import { StyleSheet, Text } from 'react-native';
-import AppText from './ AppText';
+import AppText from './AppText';
 
-const SmallText = ({ children, style, ... rest }) = > (
+const SmallText = ({children, style, ...rest}) => (
   < AppText style={[ styles.small, style]}
     {... rest}>
     {children}

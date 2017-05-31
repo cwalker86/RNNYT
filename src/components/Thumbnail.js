@@ -2,10 +2,10 @@ import React, { PropTypes } from 'react';
 import {
   StyleSheet,
   Image,
-  View
+  View,
 } from 'react-native';
 
-import Title from '.Title';
+import Title from './Title';
 
 const Thumbnail = ({ url, titleText, accentColor, style }) => {
   /* Add transparency to the color */
@@ -14,9 +14,7 @@ const Thumbnail = ({ url, titleText, accentColor, style }) => {
   };
 
   return (
-    {/*Add a colored border to the bottom of the Thumbnail */}
     <View style={[styles.container, { borderColor: accentColor }, style]}>
-      {/*If there is a url, display an image*/}
       {url.length > 0 ? (
         <Image
           style={[styles.image]}
@@ -25,7 +23,6 @@ const Thumbnail = ({ url, titleText, accentColor, style }) => {
           <Title style={styles.title}>{titleText}</Title>
         </Image>
       ) : (
-       {/*Otherwise display a view of the correct size*/}
         <View style={[styles.image, imageStyle]}>
           <Title style={styles.title}>{titleText}</Title>;
         </View>
